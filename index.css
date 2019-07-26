@@ -1,0 +1,134 @@
+html{
+  height: 100%;
+}
+body{
+  background: green;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.top{
+  width: 100%;
+  height: 50%;
+  background: orange;
+  position: relative;
+}
+.ballroot{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #fff;
+  z-index: 99;
+}
+.ball{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  right: 50%;
+  bottom: 80%;
+  background: #fff;
+  transition:all 0.5s;
+  z-index: 99;
+}
+.ball2{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  right: 80%;
+  bottom: 20%;
+  background: #fff;
+}
+.ball3{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  right: 30%;
+  bottom: 30%;
+  background: #fff;
+}
+.animate_heartBeat1{
+  -webkit-animation: heartBeat 2.5s infinite linear ;
+}
+.animate_heartBeat2{
+  -webkit-animation: heartBeat 3.5s infinite linear ;
+}
+.animate_heartBeat3{
+  -webkit-animation: heartBeat 4.5s infinite linear ;
+}
+
+.rocks_1 {
+  position: absolute;
+  bottom: 16%;
+  height: 50%;
+  width: 200%;
+  background: url(images/rocks_1.png);
+  background-repeat: repeat-x;
+  background-position:  top center;
+  background-size: contain;
+  animation: translateX 100s infinite linear both;
+}
+.rocks_2 {
+  position: absolute;
+  bottom: 12%;
+  height: 40%;
+  width: 200%;
+  background: url(images/rocks_2.png);
+  background-repeat: repeat-x;
+  background-position:  top center;
+  background-size: contain;
+  animation: translateX 30s infinite linear both;
+}
+.rails {
+  position: absolute;
+  bottom: 19%;
+  height: 24%;
+  width: 200%;
+  background: url(images/rails.png);
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-size: contain;
+  animation: translateX 5s infinite linear both;
+}
+.train {
+  position: absolute;
+  bottom: 20%;
+  height: 20%;
+  width: 100%;
+  right: 0px;
+  background: url(images/train.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+.ground {
+  position: absolute;
+  width: 1920px;
+  height: 98px;
+  bottom: 0px;
+  background: #16012f;
+}
+.lights {
+  position: absolute;
+  bottom: 20%;
+  height: 50%;
+  width: 1920px;
+  background: url(images/lights.png);
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-size: contain;
+  animation: translateX 4s infinite linear both;
+}
+@keyframes translateX {
+  0% {
+      background-position: 0px 0px;
+  }
+  100% {
+      background-position: 1920px 0px;
+  }
+}

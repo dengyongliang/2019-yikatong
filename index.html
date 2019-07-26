@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>一卡通</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <link rel="stylesheet" href="./animate.css">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./zepto.min.js"></script>
+</head>
+<body>
+  <div class="top">
+    <div class="ballroot">
+    </div>
+    <i class="ball ball1 animated zoomIn"></i>
+    <i class="ball ball2 animated zoomIn"></i>
+    <i class="ball ball3 animated zoomIn"></i>
+
+    <div class="rocks_1"></div>
+    <div class="rocks_2"></div>
+    <div class="rails"></div>
+    <div class="train"></div>
+    <div class="ground"></div>
+    <div class="lights"></div>
+  </div>
+  <script>
+    var times = 3000
+    setTimeout(function(){
+      for (var index = 1; index <= 3; index++) {
+        $(".ball"+index).addClass("animate_heartBeat"+index);
+      }
+    },times)
+    $(".ball").click(function(){
+      $(this).css("right", "10px").css("bottom", "10px").css("width", "0px").css("height", "0px");
+    });
+  </script>
+</body>
+</html>
